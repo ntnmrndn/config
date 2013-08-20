@@ -1,0 +1,3 @@
+OPTIONS=color,autodig
+OPTIONS=autopickup,pickup_types:$!/="+?
+OPTIONS=showexp,time

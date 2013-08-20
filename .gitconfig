@@ -1,0 +1,26 @@
+[user]
+	name = Antoine Marandon
+	email = antoine@marandon.fr
+[color]
+	ui = auto
+[core]
+	excludesfile = /Users/Antoine/.gitignore
+	autocrlf = input
+	whitespace = trailing-space,space-before-tab,indent-with-non-tab
+[alias]
+st = status
+ci = commit
+br = branch
+co = checkout
+[push]
+	default = simple
+[init]
+	templatedir = ~/.git_template
+[diff]
+	tool = opendiff
+        path = /Applications/Xcode.app/Contents/Developer/usr/bin/opendiff
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[apply]
+    whitespace = fix
